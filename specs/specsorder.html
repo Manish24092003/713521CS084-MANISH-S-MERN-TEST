@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="specs.css">
+</head>
+<body>
+    <header>
+        <h1>Order Your Specs</h1>
+        <nav>
+            <ul>
+                <li><a href="specshome.html">Home</a></li>
+                <li><a href="specsorder.html">Order</a></li>
+                <li><a href="specscontact.html">Contact</a></li>
+                <li><a href="specsinfo.html">Info</a></li>
+                <li><a href="specslogin.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="order-form">
+            <h2>Order Form</h2>
+            <form id="orderForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+                <label for="specs">Select Specs:</label>
+                <select id="specs" name="specs" required>
+                    <option value="Specs Type 1">Specs Type 1</option>
+                    <option value="Specs Type 2">Specs Type 2</option>
+                    <option value="Specs Type 3">Specs Type 3</option>
+                    
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+                <button type="submit">Place Order <a href="specscontact.html"></a></button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Specs Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
